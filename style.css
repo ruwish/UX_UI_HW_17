@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+    scroll-behavior: smooth;
 }
 
 .navbar{
@@ -127,37 +128,25 @@
     align-items: center;
     gap: 40px;
     background: #000727;
+    white-space: nowrap;
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
     line-height: 32px;
 }
-
-.banner-text{
-    color: var(--gray-gray-200, #fff); /* Body/Large B */
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 32px; /* 177.778% */
-    align-items: center; 
-    justify-content: center;
+  
+.banner p,.banner i {
+  margin: 0 20px;
+  opacity: 0;
+  animation: fadeIn 4.5s forwards;
 }
 
-.banner-icon{
-    color: var(--gray-gray-200, #fff); 
-    width: 12px;
-    height: 12px;
-    font-style: normal;
-    font-weight: 100;
-    justify-content: center;
-    display: flex;
-    align-items: center;
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
-
-.banner p{
-    margin-bottom: 0;
-}
-
+ 
+/* style for animation*/
 .skills{
     display: flex;
     width: 100%;
@@ -173,6 +162,11 @@
     flex-direction: column;
     align-items: center;
     gap: 8px;
+    opacity:0;
+}
+
+.title .animate__animated{
+    opacity:1;
 }
 
 .title h2{
@@ -205,6 +199,7 @@
     flex: 1 0 0;
     border: 2px solid var(--gray-gray-900, #161513);
     background: var(--gray-gray-900, #161513);
+    opacity:0;
 }
 
 .skill-box1 h4{
@@ -224,6 +219,11 @@
     line-height: 32px; /* 177.778% */
 }
 
+.skill-box1 .animate__animated{
+    opacity:1;
+    animation-delay: 2s;
+}
+
 .skill-box2{
     display: flex;
     padding: 36px 32px;
@@ -232,6 +232,7 @@
     gap: 24px;
     flex: 1 0 0;
     border: 2px solid var(--gray-gray-900, #161513);
+    opacity:0;
 }
 
 .skill-box2 h4{
@@ -251,6 +252,11 @@
     line-height: 32px; 
 }
 
+.skill-box2 .animate__animated{
+    opacity:1;
+    animation-delay: 5s;
+}
+
 .work-content {
     display: flex;
     width: 100%;
@@ -260,6 +266,11 @@
     align-items: center;
     gap: 32px;
     flex-shrink: 0;
+    opacity:0;
+}
+
+.work-content .animate__animated{
+    opacity:1;
 }
 
 .work-content h2 {
@@ -439,6 +450,7 @@
     align-items: center;
     gap: 16px;
     flex-shrink: 0;
+    opacity:0;
 }
 
 .CTA h2{
@@ -448,6 +460,11 @@
     font-weight: 700;
     line-height: 40px; 
     letter-spacing: -0.66px;
+}
+
+.CTA .animate__animated{
+    opacity:1;
+    animation-delay: 5s;
 }
 
 .CTA .CTA-button {
