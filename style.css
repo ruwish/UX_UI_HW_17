@@ -49,7 +49,6 @@
     width: 100%;
 }
 
-
 .hero-banner{
     display: flex;
     width: 100%;
@@ -116,6 +115,11 @@
   .button:hover {
     border-color: #c8dcb8;
   }
+
+  .button:focus, .button:active {
+    outline: none;
+}
+
   
 
 .banner{
@@ -295,7 +299,7 @@
 
 .work-box {
     display: flex;
-    width: 33.33%;
+    width: calc(33.33% -32px);
     height: 60vh;
     display: flex; 
     justify-content: center;
@@ -509,6 +513,11 @@
   .CTA .CTA-button:hover {
     border-color: #c8dcb8;
   }
+
+  .CTA-button:focus, .CTA-button:active {
+    outline: none;
+}
+
   
   @media (max-width:768px) {
     .work frame{
