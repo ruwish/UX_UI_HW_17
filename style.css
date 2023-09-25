@@ -369,6 +369,11 @@
     transition: transform 0.5s;
 }
 
+@keyframes footerAnimation{
+    0% { transform: translateY(20px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+  }
+
 .footer{
     display: flex;
     position: relative;
@@ -379,6 +384,7 @@
     flex-shrink: 0;
     padding: 40px 32px;
     flex-direction: column;
+    animation: footerAnimation 4s ease forwards;
 }
 
 .footer-icons {
@@ -515,3 +521,49 @@
         margin:20px;
     }
   }
+
+
+
+  /*-------------About Me---------------*/
+  .about-content{
+    display: flex;
+    width: 100%;
+    padding: 60px 32px;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+    flex-shrink: 0;
+    flex-direction: column;
+  }
+
+  .about-content p{
+    color: #161513;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px; 
+  }
+
+.about-CTA{
+    display: inline-flex;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    text-align: center;
+    margin-top: 12px;
+    font-size: 24px;
+}
+
+.about-CTA a{
+    display: inline-block;
+    padding: 12px 20px;
+    text-decoration: none;
+    color: #000;
+    border-radius: 5px;
+}
+
+.centered-link{
+    display:inline-block;
+    margin:0 auto;
+}
