@@ -647,15 +647,11 @@
     background-color:  #265e2c;
 }
 
-.case-studies {
-    padding: 32px;
-    color: #161513;
-}
-
 .case-study {
     border-radius: 8px;
-    padding: 20px;
-    margin-bottom: 20px;
+    padding: 40px;
+    margin: 0 auto 20px;
+    max-width: 1000px; 
 }
 
 .case-study h1 {
@@ -666,7 +662,7 @@
 }
 
 .case-study .section {
-    margin-top: 64px;
+    margin-top: 32px;
 }
 
 .case-study h3 {
@@ -680,11 +676,31 @@
 }
 
 .case-study img {
+    max-width: 100%;
     display: block;
-    margin: 20px auto;
+    margin: 20px auto; 
     border-radius: 12px;
 }
 
-.case-study figcaption{
-    font-size: 12px; 
+.case-study .userinsight p {
+    margin-bottom: 20px;
+}
+
+
+.case-study figcaption {
+    font-size: 12px;
+    text-align: center; 
+}
+
+.case-study img.zoomable-image {
+    display: block;
+    max-width: 100%;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.3s ease-out;
+    margin: 20px auto; 
+}
+
+.case-study img.enlarged {
+    transform: scale(2.0); 
 }

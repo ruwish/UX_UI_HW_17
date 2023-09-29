@@ -35,6 +35,9 @@ $(document).ready(function() {
     }, {offset: "70%"});
 });
 
-/*----------------About Me---------------------*/
+function toggleImageSize(image) {
+  image.classList.toggle('enlarged');
+}
+
 
 
