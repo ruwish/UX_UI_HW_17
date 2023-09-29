@@ -534,48 +534,60 @@
 
 
   /*-------------About Me---------------*/
-  .about-content{
+  .about-content {
     display: flex;
-    width: 100%;
-    padding: 60px 32px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 80px 0;
     align-items: center;
-    text-align: center;
-    gap: 40px;
-    flex-shrink: 0;
-    flex-direction: column;
-  }
+    gap: 60px;
+    flex-direction: row;
+}
 
-  .about-content p{
+.about-content .text {
+    width: 70%; 
+}
+
+.about-content .image {
+    width: 30%; 
+}
+
+.about-content .image img {
+    max-width: 100%; 
+}
+
+
+.about-content p{
     color: #161513;
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
     line-height: 32px; 
-  }
-
-.about-CTA{
-    display: inline-flex;
-    padding: 12px;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
-    text-align: center;
-    margin-top: 12px;
-    font-size: 24px;
+    text-align: left;
 }
 
-.about-CTA a{
-    display: inline-block;
+
+.about-CTA {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.about-CTA a {
     padding: 12px 20px;
     text-decoration: none;
     color: #000;
     border-radius: 5px;
+    font-size: 24px;
 }
 
-.centered-link{
-    display:inline-block;
-    margin:0 auto;
+.centered-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 
 /*-----------------Contact-------------------*/
 
@@ -633,4 +645,46 @@
 
 .contact button:hover {
     background-color:  #265e2c;
+}
+
+.case-studies {
+    padding: 32px;
+    color: #161513;
+}
+
+.case-study {
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.case-study h1 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.case-study .section {
+    margin-top: 64px;
+}
+
+.case-study h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.case-study p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.case-study img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 12px;
+}
+
+.case-study figcaption{
+    font-size: 12px; 
 }
