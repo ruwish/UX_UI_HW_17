@@ -704,3 +704,48 @@
 .case-study img.enlarged {
     transform: scale(2.0); 
 }
+
+/* CSS for Feature Prioritization Section */
+
+.section {
+    background-color: #f9f9f9;
+    padding: 40px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.section img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.section strong {
+    font-size: 1.2em;
+}
+
+.section p {
+    font-size: 1em;
+}
+
+.section ol {
+    padding-left: 20px;
+}
+
+.section li {
+    margin-bottom: 16px;
+}
+
+/* Optional: Adding margin to separate sections if needed */
+.section + .section {
+    margin-top: 20px;
+}
+
+.feature-list {
+    list-style-type: disc;
+    padding-left: 32px;
+}
+
+.feature-list li {
+    margin-bottom: 16px;
+    font-size: 1em; 
+}
