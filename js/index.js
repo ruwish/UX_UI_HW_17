@@ -39,5 +39,16 @@ function toggleImageSize(image) {
   image.classList.toggle('enlarged');
 }
 
+function toggleImageSize(element) {
+  if (element.classList.contains("enlarged")) {
+    element.style.width = "auto";
+    element.style.height = "auto";
+    element.classList.remove("enlarged");
+  } else {
+    element.style.width = "70%";  
+    element.style.height = "70%"; 
+    element.classList.add("enlarged");
+  }
+}
 
 
