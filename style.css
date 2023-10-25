@@ -225,6 +225,7 @@ nav ul li a:hover::after{
 .layer h3{
     font-weight: 500;
     margin-bottom: 2vw;
+    font-family: 'utile', sans-serif;
     
 }
 
@@ -233,6 +234,7 @@ nav ul li a:hover::after{
     margin-bottom: 2vw;
     font-size: 1.5vw;
     color: #fff;
+    font-family: 'utile', sans-serif;
 }
 
 .layer a{
@@ -294,6 +296,7 @@ nav ul li a:hover::after{
 .contact-left p {
     margin-top: 30px;
     font-size: 18px;
+    font-family: 'utile', sans-serif;
 }
 
 .contact-left p i {
@@ -313,6 +316,7 @@ nav ul li a:hover::after{
     color: white;
     border: none;
     border-radius: 6px;
+    font-family: 'utile', sans-serif;
 }
 
 .contact-right {
@@ -331,6 +335,7 @@ form input, form textarea {
 
 form .btn2 {
     padding: 14px 30px;
+    font-family: 'utile', sans-serif;
     font-size: 18px;
     margin-top: 20px;
     cursor: pointer;
