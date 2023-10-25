@@ -158,7 +158,7 @@ nav ul li a:hover::after{
 
 .skills-list h2{
     color: #FFF;
-    font-family: 'Merriweather';
+    font-family: 'utile', sans-serif;
     font-size: 30px;
     font-style: normal;
     font-weight: 400;
@@ -167,7 +167,7 @@ nav ul li a:hover::after{
 
 .skills-list p{
     color: #FFEECB;
-    font-family: 'Merriweather';
+    font-family: 'utile', sans-serif;
     font-size: 19px;
     font-style: normal;
     font-weight: 400;
