@@ -1,153 +1,202 @@
 <!DOCTYPE html>
-<html lang=en>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1, shrink-to-fit=no">
-
-    <title>Louis's Portfolio</title>
-    <link href="./style.css"
-        rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Louis Chen's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Caveat' rel='stylesheet'>
     <script src="https://kit.fontawesome.com/afe3cb01bd.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 
-<body style="background-color:#F3E5D6">
-    <div class="Header">
-        <nav class="navbar navbar-expand-lg" style="background-color:#000727;">
-            <div class="container-fluid">
-                <ul class="navbar-nav">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="About.html">About</a></li>
-                    <li><a href="Work.html">Works</a></li>
-                    <li><a href="Contact.html">Contact</a></li>
-                </ul>
-                <ul class="navbar-nav navbar-right">
-                    <li><a href="#">Dribbble</a></li>
-                    <li><a href="#">Instagram</a></li>
-                    <li><a href="https://www.linkedin.com/in/louis-chen-ab592b108/">Linkedin</a></li>
-                </ul>
-            </div>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <a href="index.html"><img src="images/logo.jpg" class="logo"></a>
+            <ul id="sidemenu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">My Works</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
         </nav>
+
+        <div class="headercontainter">
+            <div class="header-text">
+                <h1 style="font-family: 'Caveat'; font-size: 88px;">Hi, I'm <span>Louis</span></h1>
+                <p style="font-family: 'Caveat'; font-size: 64px;">UX Designer Based in California</p>
+            </div>
+        </div>    
     </div>
-       
-        <div class="hero-banner">
-            <div class="content">
-                <h1>HI, I'M LOUIS!</h1>
-                <p>Combing user research and business goals to<br>create great UX.</p>
-                <div>
-                    <a href="Contact.html"><button type="button" class="button"><span></span> Got a project? Let's talk!</button></a>
+</div>
+
+
+<!-- -----------about---------- -->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/aboutme.png" style="max-width: 100%; height: auto;">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p style="font-family: 'Merriweather';font-size: 24px; line-height: 32px;">
+                    Hello, my name is Louis! I was formerly a dental student at Boston University, and I have now transitioned into the role of a UX researcher. I am capable of user research, prototyping, wireframing, and UI design. 
+                    <br>
+                    <br> My journey in research started off during my undergraduate years, which I delved into molecular biology research under the guidance of my biochemistry professor. It was during those time where I honed my skills in analysis,
+                    data interpretation, and critical thinking. I was able to learn the importance of rigor and thoroughness, which are skills that can transfer to the meticulous nature of UX.
+                    These foundational skills formed the bedrock of my transition into UX research, allowing me to shift my focus from microscopic level to understanding and improving user needs. 
+                    <br>
+                    <br> As a former dental student and someone who worked in the field of medicine, I witnessed firsthand the significance of user centric design in patient care. Combining my academic background, passion in research, and empathy for end users, 
+                    I want to be able to make meaningful changes and bring positive impact to people's daily lives. Embracing a growth mindset, I look forward to the endless possibilities and opportunities to refine my skills.       
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ---------skills---------------- -->
+
+<div id="Skills">
+    <div class="container">
+        <h1 class="sub-title">My Skills</h1>
+        <div class="skills-list">
+            <div>
+                <h2>UX Design</h2>
+                <p style="font-size: 20px;">As a UX Designer, I excel in:
+                    <br><br>- Conducting insightful user research for design decisions
+                    <br><br>- Analzying data to identify key insights and pain points
+                    <br><br>- Utilizing user personas and user journey maps to further empathize with users
+                    <br><br>- Designing engaging interactions and usability via user testings and research
+                </p>
+            </div>
+            <div>
+                <h2>UX Research</h2>
+                <p style="font-size: 20px;"> I believe it is of utmost importance to:
+                    <br><br>- Listen to users in order to uncover their needs and pain points
+                    <br><br>- Have thorough research in order to lay out the foundation for future designs
+                    <br><br>- Analyze user's thoughts and desires into clear and meaningful patterns
+                    <br><br>- Empathize with the users and advocate for their needs
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ----------portfolio------------ -->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/travelapp.png">
+                <div class="layer">
+                    <h3> Travel App</h3>
+                    <p>Design a travel app with the help of AI learning to elevate users' experiences during their trips.</p>
+                    <a href="travelapp.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/journalphoto.png">
+                <div class="layer">
+                    <h3>JournAI</h3>
+                    <p>A journal website that is designed to be more personalized with the help of AI.</p>
+                    <a href="journAI.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
         </div>
+        <!-- <a href="#" class="btn">See more</a> -->
+    </div>
+</div>
 
+<!-- ----------contact------------- -->
 
-        <div class="banner" >
-                <p>DESIGN</p> 
-                <i class="fa-solid fa-star-of-life"></i>
-                <p>PROBLEM SOLVING</p>
-                <i class="fa-solid fa-star-of-life"></i>
-                <p>USER RESEARCH</p>
-                <i class="fa-solid fa-star-of-life"></i>
-                <p>STRATEGY</p>
-                <i class="fa-solid fa-star-of-life"></i>
-                <p>CREATIVITY</p>
-        </div>
-
-
-        <div class="skills">
-            <div class="title">
-               <H2>Skills</H2>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>louis4646@gmail.com</p>
+                <a href="https://www.linkedin.com/in/louis-chen-ab592b108/"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+                <br>
+                <a href="images/Resume.pdf" download class="btn btn2">Download Resume</a>
             </div>
-            <div class="skills-frame">
-                    <div class="skill-box1">
-                        <h4>UI/UX Design</h4>
-                        <p>As a UX researcher, I excel in:
-                            <br>- Conducting insightful user research for design decisions
-                            <br>- Analzying data to identify key insights and pain points
-                            <br>- Utilizing user personas and user journey maps to further empathize with users
-                            <br>- Designing engaging interactions and usability via user testings and research
-                        </p>
-                    </div>
-                    <div class="skill-box2">
-                        <h4>User Research</h4>
-                        <p> I believe it is of utmost importance to:
-                            <br>- Listen to users in order to uncover their needs and pain points
-                            <br>- Have thorough research in order to lay out the foundation for future designs
-                            <br>- Analyze user's thoughts and desires into clear and meaningful patterns
-                            <br>- Empathize with the users and advocate for their needs
-                        </p>
-                    </div>
+
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
             </div>
         </div>
+    </div>
+</div>
 
-        <div class="work-content">
-            <h2>Case Studies</h2>
-            <div class="work-frame">
-                <div class="work-box">
-                    <div class="image-container">
-                        <div class="image-hover">
-                                <img src="travelapp.png" width="100%" style="opacity:0.75" display="block" margin="auto">                       
-                            <div class="image-name">
-                                <a href="Project1.html">
-                                <h1>Travel App Case Study</h1>
-                                <p>Design a travel app with the help of AI learning to elevate users' experiences during their trips.</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="work-box">
-                    <div class="image-container">
-                        <div class="image-hover">
-                            <img src="journalphoto.png" width="1024px" height="1024px" style="opacity:0.75" display="block" margin="auto">
-                            <div class="image-name">
-                                <a href="journAI.html">
-                                <h1>JournAI</h1>
-                                <p>A journal website that is designed to be more personalized with the help of AI.</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="work-box">
-                    <div class="image-container">
-                        <div class="image-hover">
-                            <img src="kidsart.png" width="100%" style="opacity:0.75" display="block" margin="auto">
-                            <div class="image-name">
-                                <h1>Website Redesigning - Coming Soon</h1>
-                                <p>Redesigning the webpage for Kids&Art, a non-profit organization that helps kids heal through art.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
+<!-- ----------footer------------- -->
 
+<div class="footer">
+    <p>© 2023 | All Rights Reserved by Louis Chen</p>
+</div>  
 
-        <div class="CTA">
-            <h2>Designing Experiences That Resonate</h2>
-            <a href="Contact.html"><button type="button" class="CTA-button"><span></span>Let's Collaborate!</button></a>
-        </div>
-    
+<script>
 
-        <div class="footer">
-            <ul class="footer-icons">
-                <li><a href="#"><img src="dribbble.svg" width="32px" height="32px"></a></li>    
-                <li><a href="#"><img src="ig.svg" width="32px" height="32px"></a></li>
-                <li><a href="https://www.linkedin.com/in/louis-chen-ab592b108/"><img src="link.svg" width="32px" height="32px"></a></li>
-            </ul>
-            <ul class="footer-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="About.html">About</a></li>
-                <li><a href="Work.html">Work</a></li>
-                <li><a href="Contact.html">Contact</a></li>
-            </ul>
-            <p>© 2023 | All Rights Reserved by Louis Chen</p>
-        </div>  
-<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>        
-<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js" integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script></script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = '< add you own link here >' // add your own app script link here
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 </body>
-<script src="js/index.js"></script>
 </html>

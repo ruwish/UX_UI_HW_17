@@ -51,4 +51,9 @@ function toggleImageSize(element) {
   }
 }
 
+// Add a class to trigger the reveal animation when the page loads
+document.addEventListener("DOMContentLoaded", function() {
+  const headerContainer = document.querySelector(".headercontainer");
+  headerContainer.classList.add("reveal");
+});
 
