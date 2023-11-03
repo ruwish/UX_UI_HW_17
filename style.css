@@ -132,16 +132,16 @@ nav ul li a:hover::after{
 .sub-title{
     font-size: 60px;
     font-weight: 600;
-    font-family: 'meursault-variable', serif;
-    font-style: bold;
-    font-weight: 800;
+    font-family: 'Vogue', sans-serif;                
+    font-style: normal;
+    font-weight: 500;
     line-height: normal;
 }
 
 
 /* ----------------skills------------- */
 #Skills{
-   padding-bottom: 120px;
+   padding-bottom: 320px;
    padding-top: 0px;
 }
 
